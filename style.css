@@ -17,5 +17,39 @@ body {
 }
 
 .player {
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title {
     font-size: 2em;
+}
+
+.one {
+    float: left;
+}
+
+.two {
+    float: right;
+}
+
+.turn {
+    color: rgba(255, 0, 0, 0.672);
+}
+
+.score {
+    margin-top: 50px;
+    font-size: 4em;
+}
+
+.dice {
+    position: absolute;
+    left: 47%;
+    top: 200px;
+}
+
+.dice-img {
+    width: 50%;
+    border-radius: 20px;
 }
