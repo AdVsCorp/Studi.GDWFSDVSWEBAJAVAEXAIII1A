@@ -53,3 +53,34 @@ body {
     width: 50%;
     border-radius: 20px;
 }
+
+.actions {
+    position: absolute;
+    top: 380px;
+    left: 44%;
+}
+
+.current {
+    position: absolute;
+    top: 480px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    left: 645px;
+    font-size: 2em;
+}
+
+.current-one {
+    color: rgba(0, 8, 255, 0.487);
+}
+
+.current-two {
+    margin-left: 350px;
+    color: rgba(255, 0, 0, 0.487);
+}
+
+.new-game {
+    position: absolute;
+    top: 65px;
+    left: 46%;
+}
