@@ -17,10 +17,10 @@
             <div class="player one">
                 <span class="player title">
                     Player 1
-                    <span class="turn" id="turn">⚈</span>
+                    <span class="turn" id="turnP1">⚈</span>
                 </span>
                 <br>
-                <span class="player score">
+                <span class="player score" id="current-score-p1">
                     0
                 </span>
             </div>
@@ -30,16 +30,16 @@
             <div class="player two">
                 <span class="player title">
                     Player 2
-                    <span class="turn" id="turn" style="display: none;">⚈</span>
+                    <span class="turn" id="turnP2" style="display: none;">⚈</span>
                 </span>
                 <br>
-                <span class="player score">
+                <span class="player score" id="current-score-p2">
                     0
                 </span>
             </div>
             <div class="actions">
                 <button type="button" class="btn btn-primary btn-lg">ROLL DICE</button>
-                <button type="button" class="btn btn-warning btn-lg">HOLD !</button>
+                <button type="button" onclick="holdCurrentScore();" class="btn btn-warning btn-lg">HOLD !</button>
             </div>
             <div class="current">
                 <div class="current-one">
