@@ -25,7 +25,7 @@
                 </span>
             </div>
             <div class="dice">
-                <img class="dice-img" src="./images/1.png" alt="">
+                <img class="dice-img rotated-0" id="dice-img" src="./images/1.png" alt="">
             </div>
             <div class="player two">
                 <span class="player title">
@@ -38,15 +38,15 @@
                 </span>
             </div>
             <div class="actions">
-                <button type="button" class="btn btn-primary btn-lg">ROLL DICE</button>
-                <button type="button" onclick="holdCurrentScore();" class="btn btn-warning btn-lg">HOLD !</button>
+                <button type="button" onclick="rollDice();" class="btn btn-primary btn-lg">ROLL DICE</button>
+                <button type="button" onclick="addedToTotal(0);" class="btn btn-warning btn-lg">HOLD !</button>
             </div>
             <div class="current">
                 <div class="current-one">
-                    Current (P1) : 0
+                    Current (P1) : <span id="current-1">0</span>
                 </div>
                 <div class="current-two">
-                    Current (P2): 0
+                    Current (P2): <span id="current-2">0</span>
                 </div>
             </div>
         </div>
