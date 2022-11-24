@@ -12,7 +12,7 @@
     <main>
         <div class="container">
             <div class="new-game">
-                <button type="button" class="btn btn-success btn-lg">NEW GAME</button>
+                <button type="button" onclick="raz();" class="btn btn-success btn-lg">NEW GAME</button>
             </div>
             <div class="player one">
                 <span class="player title">
@@ -20,7 +20,7 @@
                     <span class="turn" id="turnP1">⚈</span>
                 </span>
                 <br>
-                <span class="player score" id="current-score-p1">
+                <span class="player score" id="total-score-p1">
                     0
                 </span>
             </div>
@@ -33,13 +33,13 @@
                     <span class="turn" id="turnP2" style="display: none;">⚈</span>
                 </span>
                 <br>
-                <span class="player score" id="current-score-p2">
+                <span class="player score" id="total-score-p2">
                     0
                 </span>
             </div>
             <div class="actions">
                 <button type="button" onclick="rollDice();" class="btn btn-primary btn-lg">ROLL DICE</button>
-                <button type="button" onclick="addedToTotal(0);" class="btn btn-warning btn-lg">HOLD !</button>
+                <button type="button" onclick="addedToTotal(getCurrentPoints());" class="btn btn-warning btn-lg">HOLD !</button>
             </div>
             <div class="current">
                 <div class="current-one">
@@ -50,6 +50,15 @@
                 </div>
             </div>
         </div>
+        <p>
+            <center>
+                Roll the die. <br>
+                If you roll a 1, your current score is lost and your turn is over.
+                The first player to reach 100 points on global wins the game.
+                <br> <br>
+                Good game !
+            </center>
+        </p>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
